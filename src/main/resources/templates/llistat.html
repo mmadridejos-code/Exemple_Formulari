@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Llistat</title>
+</head>
+<body>
+<thead>
+<tr>
+    <th>ID</th>
+    <th>Nom</th>
+    <th>Email</th>
+    <th>Telèfon</th>
+</tr></br>
+</thead>
+<tbody>
+<tr th:each="emp : ${llistaEmpleats}">
+    <td th:text="${emp.id}">id</td>
+    <td th:text="${emp.nom}">Bla Bla Car</td>
+    <td th:text="${emp.email}">bla@ole.com</td>
+    <td th:text="${emp.telefon}">123456789</td></br>
+</tr>
+</tbody>
+</table>
+
+</body>
+</html>
